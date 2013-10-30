@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Formularios</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="primer">Ingresa tu nombre:</label>
+        <input name="primer" type="text" placeholder="Ingresa tu nombre" required id="primer">
+      </div>
+      <div>
+        <input name="apellido" type="text" placeholder="Ingresa tu apellido" required>
+      </div>
+      <div>
+        <input name="email" type="email" placeholder="Ingresa tu email" required>
+      </div>
+      <div>
+        <input name="edad" type="number" placeholder="Edad" min="1" max="100" required>
+      </div>
+      <div>
+        <input name="web" type="url" placeholder="Tu Página web" required>
+      </div>
+      <div>
+        <input name="buscar" type="search" placeholder="Buscar" required>
+      </div>
+      <div>
+        <input name="password" type="password" placeholder="Tu password" required>
+      </div>
+      <div>
+        <select name="pais" required>
+          <optgroup label="America">
+            <option value="PE">Perú</option>
+            <option value="CL">Chile</option>
+            <option value="AR">Argentina</option>
+          </optgroup>
+          <optgroup label="Europa">
+            <option value="ES">España</option>
+            <option value="PT">Portugal</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <select name="ciudad" required multiple>
+          <option value="CU">Cusco</option>
+          <option value="LI">Lima</option>
+          <option value="AQ">Arequipa</option>
+        </select>
+      </div>
+      <div>
+        <textarea rows="9" cols="30" placeholder="Ingresa tus comentarios"></textarea>
+      </div>
+      <div>
+        <input type="checkbox" name="musica" id="rock"> <label for="rock">Rock</label>
+        <input type="checkbox" name="musica" id="huayno"> <label for="huayno">Huayno</label>
+      </div>
+      <div>
+        <input type="radio" name="sexo" id="varon"> <label for="varon">Varón</label>
+        <input type="radio" name="sexo" id="mujer"> <label for="mujer">Mujer</label>
+      </div>
+      <div>
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>

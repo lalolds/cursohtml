@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Formularios</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <form>
+      <div>
+        <input name="nombre" type= "text" placeholder="Ingresa tu nombre" required="nombre"> 
+      </div>
+      <div>
+        <input name="apellido" type="text" placeholder="Ingresa tu apellido" required="apellido">
+      </div>
+      <div>
+        <input name="edad" type="number" Placeholder="Edad" min="1" max="100"required="edad">
+      </div>
+      <div>
+        <input name="email" tyoe="text" placeholder="Ingresa tu email" required="email">
+      </div>
+      <div>
+        <label for="barrio">Escoge tu Barrio</label>
+        <select name="barrio" required="barrio">
+          <optgroup label="Estaca Cusco">
+            <option value="CU">Cusco</option>
+            <option value="TI">Ttio</option>
+            <option value="LA">Los Alamos</option>
+            <option value="TU">Tullumayu</option>
+            <option value="SA">Santiago</option>
+            <option value="VU">Villa Union</option>
+          </optgroup>
+          <optgroup label="Estaca Intiraymi">
+            <option value="PI">Picchu</option>
+            <option value="IR">Intiraymi</option>
+            <option value="VM">Villa Maria</option>
+            <option value="CH">Chasqui</option>   
+            <option value="VA">Vista Alegre</option>
+            <option value="SJ">San Jeronimo</option>
+            <option value="TH">Tahuantinsuyo</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <label for="mision">Escoge tu Misión</label>
+        <select name="mision" id="mision" required>
+          <optgroup label="Misión Sirvio">
+            <option value="MP">Peru Piura</option>
+            <option value="MT">Peru Trujillo</option>
+            <option value="MI">Peru Iquitos</option>
+            <option value="ME">Peru Este</option>
+            <option value="MH">Peru Huancayo</option>
+            <option value="MC">Peru Central</option>
+            <option value="MN">Peru Norte</option>
+            <option value="MO">Peru Oeste</option>
+            <option value="MS">Peru Sur</option>
+            <option value="MCZ">Peru Cusco</option>
+            <option value="MA">Peru Arequipa</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <h3>Años de Servicio</h3>
+       <input value="año" type="number" placeholder="Año" min="1970" max="2013" required ><input value="año" type="number" placeholder="Año" min="1970" max="2013" required>
+      </div>
+      <div>
+        <textarea name="comentarios"rows="10"  cols="40" placeholder="Ingresa tus comentarios" required="comentarios"></textarea>
+      </div>    
+      <div>
+        <input type="radio" name="sexo" id="varon"><label for="varon">Varón</label>
+        <input type="radio" name="sexo" id="mujer"><label for="mujer">Mujer</label>
+      </div>
+      <div>
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>
