@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // Condicional
+    var mayorquecero = function(x) {
+      if(x > 0)
+        return 'Es mayor que cero';
+      else
+        return 'Es menor que cero';
+    };
+
+
+    // Operadores
+    a = 10 + 10; // Suma
+    b = "pa" + "labra"; // Concatenación
+    c = 50 - 20; // Diferencia
+    d = 50 * 2; // Multiplicación
+    e = 20 / 5; // División
+    f = 28 % 7; // Módulo = resultado 0
+
+
+    var parImpar = function(x) {
+      if(x % 2 == 0) {
+        return 'Par';
+      } else {
+        return 'Impar';
+      }
+    };
+
+    var arreglo = [5, 6, 10, 45, 20];
+
+    var familia = ['Roberto', 'Teresa', 'Braulio', 'Silvia', 'Nadia', 'Grace'];
+    var mifamilia = ['Deicy'];
+
+    var persona1 = {
+      'nombre': 'Braulio',
+      'apellido': 'Soncco'
+    };
+
+    var persona2 = {
+      'nombre': 'Lalo',
+      'apellido': 'Espinoza'
+    };
+
+    var persona3 = {
+      'nombre': 'Huesos',
+      'apellido': 'Huesorzano'
+    };
+
+    var sacerdocio = [
+      persona1,
+      persona2,
+      persona3
+    ];
+
+    // Repetición o bucles
+    for(var i = 0; i < sacerdocio.length; i++) {
+      console.log(sacerdocio[i].nombre);
+    }
+
+    for(var i = 0; i < familia.length; i++) {
+      console.log(familia[i]);
+    }
+
+    var i = 0;
+
+    while(i < sacerdocio.length) {
+      console.log(sacerdocio[i].nombre); 
+      i++; // i = i + 1;
+    }
+  </script>
+</body>
+</html>
